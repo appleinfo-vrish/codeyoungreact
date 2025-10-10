@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      {/* Header */}
+      <header className="header">
+        <div className="title">Wet's and Joy</div>
+        <nav>
+          <a href="#">Home</a>
+        </nav>
       </header>
+
+      {/* Welcome Section */}
+      <section className="welcome">
+        <h1>Welcome to Wet's and Joy</h1>
+        <p>Experience the thrill and excitement at Wet's and Joy!</p>
+      </section>
+
+      {/* Main Content */}
+      <section className="content">
+        <div className="left-panel">
+          <div className="image water"></div>
+        </div>
+        <div className="right-panel">
+          <div className="image amusement"></div>
+        </div>
+      </section>
     </div>
   );
 }
-
-export default App;
