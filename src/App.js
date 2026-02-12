@@ -218,31 +218,31 @@ export default function App() {
   const [savedPosts, setSavedPosts] = useState(() => JSON.parse(localStorage.getItem("ln-saved-posts")) || []);
   const [showPremiumModal, setShowPremiumModal] = useState(false);
   const [postMenu, setPostMenu] = useState(null);
-  const [news] = useState([
+  const news = [
     { id: 1, title: "AI Revolution: How ChatGPT is Changing Tech Jobs", source: "TechCrunch", time: "2h ago", reads: "2.3M", trending: true },
     { id: 2, title: "Remote Work is Here to Stay: New Report Released", source: "Forbes", time: "4h ago", reads: "1.8M" },
     { id: 3, title: "Startup Funding Hits Record High in 2026", source: "VentureBeat", time: "6h ago", reads: "1.2M" },
     { id: 4, title: "Top Programming Languages for Next Generation", source: "Dev.to", time: "8h ago", reads: "985K" },
     { id: 5, title: "Design Systems Best Practices Workshop", source: "Design Observer", time: "1d ago", reads: "654K" },
-  ]);
+  ];
 
-  const [trendingTopics] = useState([
+  const trendingTopics = [
     { id: 1, hashtag: "#ReactJS", posts: "245K", trending: true },
     { id: 2, hashtag: "#WebDevelopment", posts: "189K", trending: true },
     { id: 3, hashtag: "#AI", posts: "567K", trending: true },
     { id: 4, hashtag: "#StartupLife", posts: "103K" },
     { id: 5, hashtag: "#CareerGrowth", posts: "98K" },
-  ]);
+  ];
 
-  const [events] = useState([
+  const events = [
     { id: 1, title: "Tech Leaders Summit 2026", date: "Mar 15", time: "10:00 AM", attendees: 2543, image: "🎤", location: "San Francisco, CA" },
     { id: 2, title: "React Conference 2026", date: "Apr 20", time: "9:00 AM", attendees: 5234, image: "⚛️", location: "Virtual" },
     { id: 3, title: "AI & ML Workshop", date: "Mar 28", time: "2:00 PM", attendees: 1823, image: "🤖", location: "Boston, MA" },
-  ]);
+  ];
 
-  const [skillRecommendations] = useState([
+  const skillRecommendations = [
     "TypeScript", "System Design", "Docker", "Kubernetes", "GraphQL", "Node.js", "AWS", "MongoDB"
-  ]);
+  ];
 
   useEffect(() => { localStorage.setItem("ln-posts", JSON.stringify(posts)); }, [posts]);
   useEffect(() => { localStorage.setItem("ln-dark", dark ? "1" : "0"); document.documentElement.classList.toggle("dark", dark); }, [dark]);
@@ -601,7 +601,6 @@ function FloatingChatsWidget({chats}){
 
 function PostBox({onCreate, userProfile}){
   const [text,setText]=useState("");
-  const [postType, setPostType] = useState("post");
   
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -896,9 +895,6 @@ function Jobs({jobs, savedJobs, appliedJobs, jobSearch, setJobSearch, jobFilter,
 }
 
 function Network({network, connectUser}){
-  const [showConnectRequests, setShowConnectRequests] = useState(false);
-  const connectedCount = network.filter(p => p.connected).length;
-  
   return (
     <div className="network-page">
       <div className="network-header">
