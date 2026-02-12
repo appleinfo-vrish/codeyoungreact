@@ -388,21 +388,21 @@ function Sidebar({userProfile}){
 
       <div className="sidebar-section">
         <h4>Recent</h4>
-        <a href="#" className="sidebar-link">💼 Full Stack Engineer</a>
-        <a href="#" className="sidebar-link">📱 React Developer</a>
-        <a href="#" className="sidebar-link">🤖 AI Engineer</a>
+        <a href="apple.com" className="sidebar-link">💼 Full Stack Engineer</a>
+        <a href="apple.com" className="sidebar-link">📱 React Developer</a>
+        <a href="apple.com" className="sidebar-link">🤖 AI Engineer</a>
       </div>
 
       <div className="sidebar-section">
         <h4>Groups</h4>
-        <a href="#" className="sidebar-link">🌐 React Community</a>
-        <a href="#" className="sidebar-link">💻 Web Developers</a>
+        <a href="apple.com" className="sidebar-link">🌐 React Community</a>
+        <a href="apple.com" className="sidebar-link">💻 Web Developers</a>
       </div>
 
       <div className="sidebar-section">
         <h4>Events</h4>
-        <a href="#" className="sidebar-link">📅 Tech Conference 2026</a>
-        <a href="#" className="sidebar-link">🎓 Webinar Series</a>
+        <a href="apple.com" className="sidebar-link">📅 Tech Conference 2026</a>
+        <a href="apple.com" className="sidebar-link">🎓 Webinar Series</a>
       </div>
     </aside>
   );
@@ -451,10 +451,10 @@ function Rightbar(){
 
       <div className="footer-links">
         <h4>Helpful Resources</h4>
-        <a href="#" className="footer-link">Privacy & Terms</a>
-        <a href="#" className="footer-link">Help Center</a>
-        <a href="#" className="footer-link">Advertising</a>
-        <a href="#" className="footer-link">Business Services</a>
+        <a href="apple.com" className="footer-link">Privacy & Terms</a>
+        <a href="apple.com" className="footer-link">Help Center</a>
+        <a href="apple.com" className="footer-link">Advertising</a>
+        <a href="apple.com" className="footer-link">Business Services</a>
         <p className="footer-copyright">© 2024 LinkedIn Clone. All rights reserved.</p>
       </div>
     </aside>
@@ -494,7 +494,7 @@ function Home({posts,createPost,toggleLike,addComment,news,chats,savedPosts,save
           <div className="featured-jobs-widget">
             <div className="widget-header">
               <h3>💼 Featured Jobs</h3>
-              <a href="#" className="see-more">See all →</a>
+              <a href="apple.com" className="see-more">See all →</a>
             </div>
             <div className="featured-jobs-carousel">
               {jobs.slice(0, 3).map(job => (
@@ -1398,7 +1398,7 @@ function Me({signOut, userProfile, setUserProfile, profileEditing, setProfileEdi
                 <button className="card-menu">✎</button>
               </div>
               <p>Passionate full-stack developer with interest in web technologies, machine learning, and building scalable applications. I love solving complex problems and collaborating with talented teams. Always learning new technologies and contributing to open-source projects.</p>
-              <a href="#" className="view-more">Show more</a>
+              <a href="apple.com" className="view-more">Show more</a>
             </div>
 
             <div className="detail-card">
